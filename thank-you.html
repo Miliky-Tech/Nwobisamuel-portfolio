@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thank You!</title>
+  <!-- SweetAlert CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <style>
+    body {
+      background: #f7f7f7;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    h1 {
+      color: #4CAF50;
+    }
+    p {
+      color: #333;
+    }
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: none;
+      background: #4CAF50;
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 5px;
+    }
+    a:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Thank You!</h1>
+  <p>Your message has been sent successfully.</p>
+  <a href="index.html">Back to Home</a>
+
+  <script>
+    // Show SweetAlert when page loads
+    Swal.fire({
+      icon: 'success',
+      title: 'Message Sent!',
+      text: 'Thank you for contacting me. I will get back to you soon!',
+      confirmButtonText: 'OK',
+      confirmButtonColor: '#4CAF50'
+    });
+  </script>
+
+</body>
+</html>
